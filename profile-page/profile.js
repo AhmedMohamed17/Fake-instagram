@@ -1,4 +1,4 @@
-import GetData from "/helper/Ajax.js";
+import GetData from "../helper/Ajax.js";
 //
 
 // const ImageContainer = document.querySelector("#image-container");
@@ -73,9 +73,10 @@ GetData((data) => {
   console.log(data);
   for (var i = 1; i < data.length; i++) {
     for (var k = 0; k < 3; i++) {
-      let htmlimg = ` <img src='${data[i].postphoto}' class='img-fluid' width='50px' height='50px'>`;
+      let htmlimg = ` <img src='${data[i].postphoto}' class='img-fluid'>`;
       // SmallDiv.append(htmlimg);
       SmallDiv.insertAdjacentHTML("beforeend", htmlimg);
+      // SmallDiv.addClass("profile__section__tab__tabcontent__container__image");
       i = i + k;
       console.log("inner i ===", i);
     }

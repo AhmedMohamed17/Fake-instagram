@@ -184,8 +184,9 @@
     text-decoration: none;
   }
   .instagram-photo{
+    border-radius: 10%;
     height: 600px;
-    margin-top: -5rem;
+    /* margin-top: 0.5rem; */
     margin-right: 2rem;
     transition: opacity 1s ease-in-out;
 

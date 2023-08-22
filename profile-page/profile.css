@@ -125,14 +125,21 @@ body {
     flex-direction: row;
 }
 .profile__section__tab__tabcontent__container__image img {
-    width: 30%;
+    width: 25%;
     object-fit: contain;
     flex: 1;
+    /* margin: 7px 14px; */
 }
-.profile__section__tab__tabcontent__container__image img:nth-child(2) {
-    margin: 7px 14px;
-}
+/* .profile__section__tab__tabcontent__container__image img:nth-child(2) {
+     margin:0.2rem 0 } */
 .profile__section__tab .active {
     border-top: 2px solid #5c5c5c;
     color: #5c5c5c;
 }
+
+@media (max-width: 860px) {
+    .profile__section__tab__tabcontent__container__image img {
+        width: 40%;
+    
+    }
+  }

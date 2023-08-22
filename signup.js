@@ -158,10 +158,10 @@ const imageInput = $("#imageInput");
 
 formm.on("submit", (e) => {
   e.preventDefault();
-  let Email = formm.EmailSignup.val();
-  let FullName = formm.fullnsignup.val();
-  let UserName = formm.UsrSignup.val();
-  let PassWord = formm.PwSignup.val();
+  let Email = EmailSignupId.val();
+  let FullName = FullnSignupId.val();
+  let UserName = UsrSignupId.val();
+  let PassWord = PwSignupId.val();
   let localstorageimage = localStorage.getItem("User");
   console.log("ahmed ====", Email, FullName, UserName, PassWord);
   let DetailsObj = {
@@ -173,7 +173,7 @@ formm.on("submit", (e) => {
   };
   localStorage.setItem("User", JSON.stringify(DetailsObj));
   console.log("base64", DetailsObj);
-  location.href = "/login-page/login.html";
+  location.href = "login-page/login.html";
 });
 // live Email
 EmailSignupId.keyup((e) => {

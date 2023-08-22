@@ -8,7 +8,7 @@ setInterval(function () {
 
   setTimeout(function () {
     const increment = arrphotos[i % arrphotos.length];
-    Changephoto.src = `/sign-photos/${increment}`;
+    Changephoto.src = `../sign-photos/${increment}`;
     i++;
 
     Changephoto.classList.remove("hide");
